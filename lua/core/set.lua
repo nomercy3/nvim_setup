@@ -17,6 +17,12 @@ vim.opt.guicursor = ''
 -- set line number do relative
 vim.opt.relativenumber = true
 
+-- 4 space indent
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+
 
 -- Set highlight on search
 vim.o.hlsearch = false
