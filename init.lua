@@ -2,7 +2,7 @@ require('core.set')
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 require('core.lazy')
-require('lazy').setup("plugins", {})
+-- require('lazy').setup("plugins", {})
 
 require('core.remap')
 

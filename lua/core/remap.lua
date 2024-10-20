@@ -25,6 +25,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- preserve yanked value after cutting-pasting
 vim.keymap.set("x", "<leader>p", "\"_dP")
+vim.keymap.set("n", "<leader>d", "\"_dd", { desc = '[D]elete and put deleted in void register' })
 
 -- copy into system clipboard
 vim.keymap.set("n", "<leader>y", "\"+y")
@@ -33,3 +34,5 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 
 -- replace the word
 vim.keymap.set("n", "<leader>re", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'r[E]place the word' })
+
+

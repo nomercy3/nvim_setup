@@ -18,11 +18,10 @@ vim.opt.guicursor = ''
 vim.opt.relativenumber = true
 
 -- 4 space indent
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
-
 
 -- Set highlight on search
 vim.o.hlsearch = false
@@ -32,6 +31,8 @@ vim.wo.number = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
+
+vim.opt.scrolloff = 8
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -52,7 +53,7 @@ vim.o.smartcase = true
 vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
-vim.o.updatetime = 250
+vim.o.updatetime = 50
 vim.o.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
@@ -61,3 +62,4 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+vim.opt.wrap = false
